@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>calculator</title>
+
+    <script src="vendors/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <form>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="row">
+                <input name="x" type="text" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 leftHand"/>
+                <input name="operation" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="operator" readonly="readonly"/>
+                <input name="y" type="text" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 rightHand"/>
+            </div>
+            <div class="row">
+                <div class="numbers">
+                    <div class="row">
+                        <button class="one col-xs-4 col-sm-4 col-md-4 col-lg-4">1</button>
+                        <button class="two col-xs-4 col-sm-4 col-md-4 col-lg-4">2</button>
+                        <button class="three col-xs-4 col-sm-4 col-md-4 col-lg-4">3</button>
+                    </div>
+                    <div class="row">
+                        <button class="four col-xs-4 col-sm-4 col-md-4 col-lg-4">4</button>
+                        <button class="five col-xs-4 col-sm-4 col-md-4 col-lg-4">5</button>
+                        <button class="six col-xs-4 col-sm-4 col-md-4 col-lg-4">6</button>
+                    </div>
+                    <div class="row">
+                        <button class="seven col-xs-4 col-sm-4 col-md-4 col-lg-4">7</button>
+                        <button class="eight col-xs-4 col-sm-4 col-md-4 col-lg-4">8</button>
+                        <button class="nine col-xs-4 col-sm-4 col-md-4 col-lg-4">9</button>
+                    </div>
+                    <div class="row">
+                        <button class="zero col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xs-offset-8 col-sm-offset-8 col-md-offset-8 col-lg-offset-8">0</button>
+                    </div>
+                </div>
+                <button class="clear">Clear</button>
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="result button" style="height:25px"></div>
+            <div>
+                <button class="add operator button">+</button>
+            </div>
+            <div>
+                <button class="minus operator button">-</button>
+            </div>
+            <div>
+                <button class="multiply operator button">*</button>
+            </div>
+            <div>
+                <button class="divide operator button">/</button>
+            </div>
+            <div>
+                <button class="equals button">=</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </body>
+</html>
